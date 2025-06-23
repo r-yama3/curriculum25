@@ -1,8 +1,7 @@
 package main;
-
 import java.util.Scanner;
 
-import adventure.status;
+import adventure.Status;
 
 public class Main {
 
@@ -10,9 +9,8 @@ public class Main {
 		// TODO 自動生成されたメソッド・スタ
 		Scanner scanner = new Scanner(System.in);
 		String name = scanner.next();
-		status status = new status();
-		status.setStatus(name, 0, 0, 0, 0, 0);
-		status.status();
+		Status status = new Status(name,0,0,0,0,0);
+		status.showInfo();
 		scanner.close();
 	}
 }
